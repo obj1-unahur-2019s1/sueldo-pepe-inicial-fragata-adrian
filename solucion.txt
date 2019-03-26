@@ -1,0 +1,47 @@
+"""
+Categoria:
+    Gerente=1
+    Cadetes=2
+Bono por Resultados:
+    Porcentaje=1
+    Monto fijo=2 
+    Nulo=3
+Bono Por Presentismo:
+    Normal=1
+    Ajuste=2
+    Demagógico:3
+    Nulo:4
+"""
+categoria = 1
+
+presentismo = 0
+
+resultados = 1
+
+def sueldoPepe():
+    sueldo= definirNeto(categoria) + bonoXPresentismo + bono2
+    print(sueldo)
+    
+def definirNeto(categoria):
+    valorNeto= 0
+    if(categoria == 1):
+        valorNeto= 15000
+    if(categoria == 2):
+        valorNeto= 20000
+    return(valorNeto)
+
+def definirBonoXResultado(resultados):
+    bono2= 0
+    if(resultados == 1):
+        bono2= (definirNeto(categoria) *0.10)
+    if(resultados == 2):
+        bono2= 800
+    if(resultados == 3):
+        bono2= 0
+    return(bono2)
+
+def definirBonoXPresentismo(presentismo):
+    bono1= 0
+    if(bono1 == 1):
+        
+    
